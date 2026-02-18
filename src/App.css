@@ -10,3 +10,9 @@
   overflow-y: hidden;
 }
 
+.card{
+  background-color: black;
+  padding: 13rem 5rem;
+  border-radius: 8px;
+
+}
