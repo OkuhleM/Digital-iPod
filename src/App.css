@@ -3,8 +3,10 @@
   padding: 15rem 30px;
   margin: 4rem auto;
   background-color: #ffb6d1;
-  width: 20%;
-  height: 80%;
+  width: 25%;
+  height: 20vh;
   border-radius: 12px;
+  box-shadow: 0px 5px 10px 5px rgb(217, 207, 207);
+  overflow-y: hidden;
 }
 
