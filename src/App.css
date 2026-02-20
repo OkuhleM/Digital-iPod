@@ -1,18 +1,80 @@
-
-.Container{
+.Container {
   padding: 15rem 30px;
   margin: 4rem auto;
   background-color: #ffb6d1;
   width: 25%;
   height: 20vh;
-  border-radius: 12px;
-  box-shadow: 0px 5px 10px 5px rgb(217, 207, 207);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
   overflow-y: hidden;
 }
 
-.card{
-  background-color: black;
+.card {
+  background: black;
   padding: 8rem 5rem;
   border-radius: 8px;
+  height: 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  color: #fff;
+}
 
+.round-btn{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: inset 0 5px 15px rgba(0,0,0,0.5),
+}
+
+.wheel-button {
+  position: absolute;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.1s;
+}
+
+.wheel-button:active {
+  transform: scale(0.9);
+}
+
+/* Position buttons around the wheel */
+.wheel-button.menu {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel-button.play {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel-button.prev {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wheel-button.next {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }

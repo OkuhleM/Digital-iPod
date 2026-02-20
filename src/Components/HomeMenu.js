@@ -6,8 +6,14 @@ function HomeMenu() {
     <div>
         <div className='Container'>
             <div className='card'>
-                <div className='round-btn'></div>
+                
             </div>
+                <div className='round-btn'>
+                   <button className="wheel-button menu">MENU</button>
+  <button className="wheel-button prev">⏮</button>
+  <button className="wheel-button play">▶️/⏸</button>
+  <button className="wheel-button next">⏭</button>
+                </div>
         </div>
     </div>
   )
